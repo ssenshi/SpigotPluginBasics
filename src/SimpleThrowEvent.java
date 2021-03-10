@@ -1,6 +1,3 @@
-package dev.stan.mc;
-
-
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
