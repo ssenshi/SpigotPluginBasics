@@ -1,4 +1,3 @@
-
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
@@ -15,8 +14,6 @@ public class FlyOnGMS extends JavaPlugin implements Listener{
 	public void onEnable() {
 		
 		getServer().getPluginManager().registerEvents(this, this);
-		saveConfig();
-		
 		System.out.println("FlySpec plugin enabled [+]");
 	}
 	
