@@ -1,9 +1,5 @@
-package dev.stan.mc;
-
 import org.bukkit.plugin.java.JavaPlugin; 
-
-import net.md_5.bungee.api.ChatColor; // importing chat color
- 
+import net.md_5.bungee.api.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
@@ -17,12 +13,13 @@ public class ChatFilter extends JavaPlugin implements Listener{
 	public void onEnable() {
 		System.out.println("Plugin has been enabled");
 		getServer().getPluginManager().registerEvents(this, this); 
-  }
+	}
   
-  @EventHandler
+ 	@EventHandler
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		
 		Player player = event.getPlayer();	
 		player.getWorld().playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BELL, 3.0F, 0.5F);
     
 	}
+}
